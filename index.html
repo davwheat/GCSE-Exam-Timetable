@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- #region preloads -->
+    <link rel="preload" href="/bootstrap.min.css" as="style" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+      as="style"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      as="style"
+      crossorigin="anonymous"
+    />
+    <link rel="preload" href="/bootstrap.min.css" as="style" />
+    <link rel="preload" href="/theme.css" as="style" />
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="preload" href="/jquery-3.4.1.min.js" as="script" />
+    <link rel="preload" href="/popper.min.js" as="script" />
+    <link rel="preload" href="/bootstrap.min.js" as="script" />
+    <!-- #endregion -->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GCSE Exam Timetable</title>
+
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Custom fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">GCSE Timetable Generator</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#start">Generate Timetable</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">Make your own exam timetable</h1>
+          <p class="masthead-subheading mb-0">and match it to your needs</p>
+          <a
+            class="btn btn-primary btn-xl rounded-pill mt-5"
+            href="#start"
+            role="button"
+            >Create your timetable</a
+          >
+        </div>
+      </div>
+      <div class="bg-circle-1 bg-circle"></div>
+      <div class="bg-circle-2 bg-circle"></div>
+      <div class="bg-circle-3 bg-circle"></div>
+      <div class="bg-circle-4 bg-circle"></div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img
+                class="img-fluid rounded-circle"
+                src="/img/timetable.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Mix and match your subjects</h2>
+              <p>
+                Unlike some exam timetables, you can pick and choose the
+                subjects that you are actually doing! You can either hide exams
+                for subjects you aren't doing or leave them there.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="new-layer">
+      <div class="container">
+        <h2 class="display-4">1. Pick your subjects</h2>
+        <form class="new-layer">
+          <h3 class="display-5">a. Core Subjects</h3>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="englishLang"
+              data-subject="English Language"
+              checked
+            />
+            <label class="custom-control-label" for="englishLang"
+              >English Language</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="englishLit"
+              data-subject="English Literature"
+              checked
+            />
+            <label class="custom-control-label" for="englishLit"
+              >English Literature</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="maths"
+              data-subject="Maths"
+              checked
+            />
+            <label class="custom-control-label" for="maths">Maths</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="science"
+              data-subject="Science"
+              checked
+            />
+            <label class="custom-control-label" for="science">Science</label>
+          </div>
+          <hr />
+          <h3 class="display-5">b. Option Subjects</h3>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="hospCater"
+              data-subject="Hospitability and Catering"
+            />
+            <label class="custom-control-label" for="hospCater"
+              >Hospitability and Catering</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="drama"
+              data-subject="Drama"
+            />
+            <label class="custom-control-label" for="drama">Drama</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="art"
+              data-subject="Art"
+            />
+            <label class="custom-control-label" for="art">Art</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="photography"
+              data-subject="Photography"
+            />
+            <label class="custom-control-label" for="photography"
+              >Photography</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="french"
+              data-subject="French"
+            />
+            <label class="custom-control-label" for="french">French</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="spanish"
+              data-subject="Spanish"
+            />
+            <label class="custom-control-label" for="spanish">Spanish</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="german"
+              data-subject="German"
+            />
+            <label class="custom-control-label" for="german">German</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="compSci"
+              data-subject="Computer Science"
+            />
+            <label class="custom-control-label" for="compSci"
+              >Computer Science</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="geog"
+              data-subject="Geography"
+            />
+            <label class="custom-control-label" for="geog">Geography</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="rs"
+              data-subject="Religious Studies"
+            />
+            <label class="custom-control-label" for="rs"
+              >Religious Studies</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="eng"
+              data-subject="Engineering"
+            />
+            <label class="custom-control-label" for="eng">Engineering</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="business"
+              data-subject="Business"
+            />
+            <label class="custom-control-label" for="business">Business</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="hist"
+              data-subject="History"
+            />
+            <label class="custom-control-label" for="hist">History</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="fmaths"
+              data-subject="Further Maths"
+            />
+            <label class="custom-control-label" for="fmaths"
+              >Further Maths</label
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="options" class="new-layer">
+      <table class="table table-bordered"></table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">
+          Copyright &copy;
+          <a href="https://github.com/davwheat/" rel="noopener" target="_blank"
+            >David Wheatley</a
+          >
+          2019
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/popper.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+
+    <script>
+      $("a[href^='#']").on("click", function(e) {
+        // prevent default anchor click behavior
+        e.preventDefault();
+
+        // store hash
+        var hash = this.hash;
+
+        console.log(hash);
+
+        // animate
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top - 67
+          },
+          300,
+          function() {
+            // when done, add hash to url
+            // (default click behaviour)
+            window.location.hash = hash;
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

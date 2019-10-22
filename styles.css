@@ -1,0 +1,23 @@
+.custom-control-label::before {
+  border: #bd076070 solid 1px;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem #bd076050;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #bd0760;
+  background-color: #bd0760;
+}
+
+.new-layer {
+  background: rgba(128, 128, 128, 0.1);
+  padding: 2rem;
+}
+
+.scrollable {
+  max-height: 200px;
+  height: max-content;
+  overflow: scroll;
+}
