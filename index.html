@@ -49,21 +49,35 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">GCSE Timetable Generator</a>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#start">Generate Timetable</a>
-          </li>
-        </ul>
+        <a class="navbar-brand" href="#">Exam Timetable Maker</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#start">Generate Timetable</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <header id="hero" class="masthead text-center text-white">
       <div class="masthead-content">
         <div class="container">
-          <h1 class="masthead-heading mb-0">Make your own exam timetable</h1>
+          <h1 class="masthead-heading mb-0">Create your own exam timetable</h1>
           <p class="masthead-subheading mb-0">and match it to your needs</p>
           <a
             class="btn btn-primary btn-xl rounded-pill mt-5"
@@ -79,14 +93,14 @@
       <div class="bg-circle-4 bg-circle"></div>
     </header>
 
-    <section>
+    <section class="full-height">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
               <img
                 class="img-fluid rounded-circle"
-                src="/img/timetable.jpg"
+                src="img/timetable.jpg"
                 alt=""
               />
             </div>
@@ -105,7 +119,7 @@
       </div>
     </section>
 
-    <section id="start" class="new-layer">
+    <section id="start" class="new-layer full-height">
       <div class="container">
         <h2 class="display-4">1. Pick your subjects</h2>
         <form class="new-layer">
@@ -296,7 +310,7 @@
       </div>
     </section>
 
-    <section id="settings" class="pad">
+    <section id="settings" class="pad full-height">
       <div class="container">
         <form>
           <h2 class="display-4">2. Settings</h2>
@@ -371,6 +385,10 @@
             window.location.hash = hash;
           }
         );
+      });
+
+      $("a.nav-link").on("click", e => {
+        $("button.navbar-toggler").click();
       });
 
       $("input[data-setting]").on("click", function(e) {

@@ -57,18 +57,21 @@ h6 {
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  padding-bottom: 7rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
   background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 100vh;
 }
 
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
+  margin: auto;
 }
 
 header.masthead .masthead-content .masthead-heading {
