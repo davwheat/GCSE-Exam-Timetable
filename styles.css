@@ -91,7 +91,7 @@
 }
 
 .hatch {
-  background: url("/cross.svg");
+  background: url("img/cross.svg");
   position: relative;
 }
 
