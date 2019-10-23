@@ -1,0 +1,92 @@
+[
+  {
+    "date": "2020-02-25",
+    "morning": [
+      {
+        "name": "Hospitality & Catering Practical",
+        "examBoard": "WJEC",
+        "duration": "4h"
+      }
+    ],
+    "afternoon": []
+  },
+  {
+    "date": "2020-02-26",
+    "morning": [
+      {
+        "name": "Hospitality & Catering Practical",
+        "examBoard": "WJEC",
+        "duration": "4h"
+      }
+    ],
+    "afternoon": []
+  },
+  {
+    "date": "2020-04-21",
+    "morning": [
+      {
+        "name": "Art & Photography Exams",
+        "examBoard": "AQA",
+        "duration": "4h"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Art & Photography Exams",
+        "examBoard": "AQA",
+        "duration": "1h"
+      }
+    ]
+  },
+  {
+    "date": "2020-04-22",
+    "morning": [
+      {
+        "name": "Art & Photography Exams",
+        "examBoard": "AQA",
+        "duration": "4h"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Art & Photography Exams",
+        "examBoard": "AQA",
+        "duration": "1h"
+      }
+    ]
+  },
+  {
+    "date": "2020-04-23",
+    "morning": [
+      {
+        "name": "Art & Photography Exams",
+        "examBoard": "AQA",
+        "duration": "4h"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Art & Photography Exams",
+        "examBoard": "AQA",
+        "duration": "1h"
+      }
+    ]
+  },
+  {
+    "date": "2020-04-24",
+    "morning": [
+      {
+        "name": "Art & Photography Exams",
+        "examBoard": "AQA",
+        "duration": "4h"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Art & Photography Exams",
+        "examBoard": "AQA",
+        "duration": "1h"
+      }
+    ]
+  }
+]

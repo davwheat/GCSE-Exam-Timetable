@@ -12,7 +12,10 @@
 }
 
 .new-layer {
-  background: rgba(128, 128, 128, 0.1);
+  padding: 2rem;
+}
+
+.pad {
   padding: 2rem;
 }
 
@@ -20,4 +23,84 @@
   max-height: 200px;
   height: max-content;
   overflow: scroll;
+}
+
+@media not print {
+  .new-layer {
+    background: rgba(128, 128, 128, 0.1);
+  }
+
+  .table-dark-c,
+  .table-dark-c > td,
+  .table-dark-c > th {
+    background-color: #c6c8ca;
+  }
+  .table-dark-c tbody + tbody,
+  .table-dark-c td,
+  .table-dark-c th,
+  .table-dark-c thead th {
+    border-color: #95999c;
+  }
+  .table-hover .table-dark-c:hover {
+    background-color: #b9bbbe;
+  }
+  .table-hover .table-dark-c:hover > td,
+  .table-hover .table-dark-c:hover > th {
+    background-color: #b9bbbe;
+  }
+  .table-active,
+  .table-active > td,
+  .table-active > th {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+  .table-hover .table-active:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+  .table-hover .table-active:hover > td,
+  .table-hover .table-active:hover > th {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+  .table .thead-dark th {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+  }
+  .table-dark-c {
+    color: #fff;
+    background-color: #343a40;
+  }
+  .table-dark-c td,
+  .table-dark-c th,
+  .table-dark-c thead th {
+    border-color: #454d55;
+  }
+  .table-dark-c.table-bordered {
+    border: 0;
+  }
+  .table-dark-c.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .table-dark-c.table-hover tbody tr:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+}
+
+.hatch {
+  background: url("/cross.svg");
+}
+
+.hatch::after {
+  position: absolute;
+  display: block;
+  content: "NO EXAM";
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.75rem;
+  text-align: center;
+  line-height: 1.75rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
