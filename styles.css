@@ -108,6 +108,12 @@
   opacity: 0.4;
 }
 
+.table-dark-c .hatch::after {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  opacity: 0.8;
+}
+
 .full-height {
   min-height: 100vh;
   display: flex;
