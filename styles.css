@@ -101,18 +101,6 @@
   .no-print {
     display: none;
   }
-
-  td.highlighted {
-    background: #ff0 !important;
-    -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
-    color-adjust: exact !important; /*Firefox*/
-  }
-  td.contingency {
-    background: #f00a;
-    color: #000;
-    -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
-    color-adjust: exact !important; /*Firefox*/
-  }
 }
 
 .table td {
@@ -171,8 +159,8 @@ td.highlighted {
   color-adjust: exact !important; /*Firefox*/
 }
 td.contingency {
-  background: #f00a;
-  color: #000;
+  background: #f00 !important;
+  color: #fff !important;
   -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
   color-adjust: exact !important; /*Firefox*/
 }
