@@ -86,23 +86,26 @@
   }
 }
 
+.table td {
+  text-align: center;
+}
+
 .hatch {
   background: url("/cross.svg");
+  position: relative;
 }
 
 .hatch::after {
   position: absolute;
   display: block;
-  content: "NO EXAM";
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 1.75rem;
-  text-align: center;
-  line-height: 1.75rem;
+  content: "";
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: url("img/no-exam.png") no-repeat center center;
+  background-size: 60%;
+  opacity: 0.4;
 }
 
 .full-height {
