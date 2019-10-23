@@ -5,7 +5,8 @@
       {
         "name": "Hospitality & Catering Practical",
         "examBoard": "WJEC",
-        "duration": "4h"
+        "duration": "4h",
+        "subjects": ["Hospitality and Catering"]
       }
     ],
     "afternoon": []
@@ -16,7 +17,8 @@
       {
         "name": "Hospitality & Catering Practical",
         "examBoard": "WJEC",
-        "duration": "4h"
+        "duration": "4h",
+        "subjects": ["Hospitality and Catering"]
       }
     ],
     "afternoon": []
@@ -27,14 +29,16 @@
       {
         "name": "Art & Photography Exams",
         "examBoard": "AQA",
-        "duration": "4h"
+        "duration": "4h",
+        "subjects": ["Art", "Photography"]
       }
     ],
     "afternoon": [
       {
         "name": "Art & Photography Exams",
         "examBoard": "AQA",
-        "duration": "1h"
+        "duration": "1h",
+        "subjects": ["Art", "Photography"]
       }
     ]
   },
@@ -44,14 +48,16 @@
       {
         "name": "Art & Photography Exams",
         "examBoard": "AQA",
-        "duration": "4h"
+        "duration": "4h",
+        "subjects": ["Art", "Photography"]
       }
     ],
     "afternoon": [
       {
         "name": "Art & Photography Exams",
         "examBoard": "AQA",
-        "duration": "1h"
+        "duration": "1h",
+        "subjects": ["Art", "Photography"]
       }
     ]
   },
@@ -61,14 +67,16 @@
       {
         "name": "Art & Photography Exams",
         "examBoard": "AQA",
-        "duration": "4h"
+        "duration": "4h",
+        "subjects": ["Art", "Photography"]
       }
     ],
     "afternoon": [
       {
         "name": "Art & Photography Exams",
         "examBoard": "AQA",
-        "duration": "1h"
+        "duration": "1h",
+        "subjects": ["Art", "Photography"]
       }
     ]
   },
@@ -78,15 +86,464 @@
       {
         "name": "Art & Photography Exams",
         "examBoard": "AQA",
-        "duration": "4h"
+        "duration": "4h",
+        "subjects": ["Art", "Photography"]
       }
     ],
     "afternoon": [
       {
         "name": "Art & Photography Exams",
         "examBoard": "AQA",
-        "duration": "1h"
+        "duration": "1h",
+        "subjects": ["Art", "Photography"]
       }
     ]
+  },
+  {
+    "date": "2020-05-11",
+    "morning": [
+      {
+        "name": "Computer Science",
+        "examBoard": "AQA",
+        "duration": "1h 30m",
+        "subjects": ["Computer Sci"],
+        "paper": "Paper 1"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Religious Studies A",
+        "examBoard": "AQA",
+        "duration": "1h 45m",
+        "subjects": ["Religious Studies"],
+        "paper": "11/13"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-12",
+    "morning": [
+      {
+        "name": "French Listening, Reading",
+        "examBoard": "AQA",
+        "duration": "35m/45m, 45m/1h",
+        "subjects": ["French"]
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Science: Biology",
+        "examBoard": "AQA",
+        "duration": "1h 15m/1h 45m",
+        "subjects": ["Science"],
+        "paper": "Paper 1"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-13",
+    "morning": [
+      {
+        "name": "English Literature",
+        "examBoard": "AQA",
+        "duration": "1h 45m",
+        "subjects": ["English Literature"],
+        "paper": "Paper 1"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Physical Education",
+        "examBoard": "Pearson",
+        "duration": "1h 45m",
+        "subjects": ["Physical Education"],
+        "paper": "Paper 1"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-14",
+    "morning": [
+      {
+        "name": "Science: Chemistry",
+        "examBoard": "AQA",
+        "duration": "1h 15m/1h 45m",
+        "subjects": ["Science"],
+        "paper": "Paper 1"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Computer Science",
+        "examBoard": "AQA",
+        "duration": "1h 30m",
+        "subjects": ["Computer Sci"],
+        "paper": "Paper 2"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-15",
+    "morning": [
+      {
+        "name": "French",
+        "examBoard": "AQA",
+        "duration": "1h/1h 15m",
+        "subjects": ["French"],
+        "paper": "Paper 4 Writing"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Physical Education",
+        "examBoard": "Pearson",
+        "duration": "1h 15m",
+        "subjects": ["Physical Education"],
+        "paper": "Paper 2"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-18",
+    "morning": [
+      {
+        "name": "Geography",
+        "examBoard": "AQA",
+        "duration": "1h 30m",
+        "subjects": ["Geography"],
+        "paper": "Paper 1"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Drama",
+        "examBoard": "AQA",
+        "duration": "1h 45m",
+        "subjects": ["Drama"]
+      },
+      {
+        "name": "German Listening, Reading",
+        "examBoard": "AQA",
+        "duration": "35m/45m, 45m/1h",
+        "subjects": ["German"]
+      }
+    ]
+  },
+  {
+    "date": "2020-05-19",
+    "morning": [
+      {
+        "name": "Mathematics",
+        "examBoard": "AQA",
+        "duration": "1h 30m",
+        "subjects": ["Maths"],
+        "paper": "Paper 1 (non-calc)"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Religious Studies A",
+        "examBoard": "AQA",
+        "duration": "1h 45m",
+        "subjects": ["Religious Studies"],
+        "paper": "Paper 2"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-20",
+    "morning": [
+      {
+        "name": "Engineering",
+        "examBoard": "AQA",
+        "duration": "2h",
+        "subjects": ["Engineering"]
+      },
+      {
+        "name": "Spanish Listening, Reading",
+        "examBoard": "AQA",
+        "duration": "35m/45m, 45m/1h",
+        "subjects": ["Spanish"]
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Science: Physics",
+        "examBoard": "AQA",
+        "duration": "1h 15m/1h 45m",
+        "subjects": ["Science"],
+        "paper": "Paper 1"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-21",
+    "morning": [
+      {
+        "name": "English Literature",
+        "examBoard": "AQA",
+        "duration": "2h 15m",
+        "subjects": ["English Literature"],
+        "paper": "Paper 2"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Business",
+        "examBoard": "OCR",
+        "duration": "1h 30m",
+        "subjects": ["Business"],
+        "paper": "Paper 1"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-22",
+    "morning": [],
+    "afternoon": []
+  },
+  {
+    "date": "2020-06-01",
+    "morning": [
+      {
+        "name": "History",
+        "examBoard": "AQA",
+        "duration": "2h",
+        "subjects": ["History"],
+        "paper": "Paper 1"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Science: Biology",
+        "examBoard": "AQA",
+        "duration": "1h 15m/1h 45m",
+        "subjects": ["Science"],
+        "paper": "Paper 2"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-02",
+    "morning": [
+      {
+        "name": "English Language",
+        "examBoard": "AQA",
+        "duration": "1h 45m",
+        "subjects": ["English Language"],
+        "paper": "Paper 1"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Business",
+        "examBoard": "OCR",
+        "duration": "1h 30m",
+        "subjects": ["Business"],
+        "paper": "Paper 2"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-03",
+    "morning": [
+      {
+        "name": "Spanish",
+        "examBoard": "AQA",
+        "duration": "1h/1h 15m",
+        "subjects": ["Spanish"],
+        "paper": "Paper 4 Writing"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Geography",
+        "examBoard": "AQA",
+        "duration": "1h 30m",
+        "subjects": ["Geography"],
+        "paper": "Paper 2"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-04",
+    "morning": [
+      {
+        "name": "Mathematics",
+        "examBoard": "AQA",
+        "duration": "1h 30m",
+        "subjects": ["Maths"],
+        "paper": "Paper 2 (calc)"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "History",
+        "examBoard": "AQA",
+        "duration": "2h",
+        "subjects": ["History"],
+        "paper": "Paper 2"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-05",
+    "morning": [
+      {
+        "name": "English Language",
+        "examBoard": "AQA",
+        "duration": "1h 45m",
+        "subjects": ["English Language"],
+        "paper": "Paper 2"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "German",
+        "examBoard": "AQA",
+        "duration": "1h/1h 15m",
+        "subjects": ["German"],
+        "paper": "Paper 4 Writing"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-08",
+    "morning": [
+      {
+        "name": "Mathematics",
+        "examBoard": "AQA",
+        "duration": "1h 30m",
+        "subjects": ["Maths"],
+        "paper": "Paper 3 (calc)"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Child Dev (YEAR 10 ONLY)",
+        "examBoard": "AQA",
+        "duration": "1h 15m",
+        "subjects": ["Child Development"]
+      }
+    ]
+  },
+  {
+    "date": "2020-06-09",
+    "morning": [],
+    "afternoon": [
+      {
+        "name": "Arabic Listening, Reading",
+        "examBoard": "Pearson",
+        "duration": "45m/1h 5m",
+        "subjects": ["Arabic"]
+      },
+      {
+        "name": "Music",
+        "examBoard": "Pearson",
+        "duration": "1h 45m",
+        "subjects": ["Music"]
+      }
+    ]
+  },
+  {
+    "date": "2020-06-10",
+    "morning": [],
+    "afternoon": [
+      {
+        "name": "Science: Chemistry",
+        "examBoard": "AQA",
+        "duration": "1h 15m/1h 45m",
+        "subjects": ["Science"],
+        "paper": "Paper 2"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-11",
+    "morning": [
+      {
+        "name": "Geography",
+        "examBoard": "AQA",
+        "duration": "1h 15m",
+        "subjects": ["Geography"],
+        "paper": "Paper 3"
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Arabic",
+        "examBoard": "Pearson",
+        "duration": "1h 25m",
+        "subjects": ["Arabic"],
+        "paper": "Paper 4 Written"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-12",
+    "morning": [
+      {
+        "name": "Science: Physics",
+        "examBoard": "AQA",
+        "duration": "1h 15m/1h 45m",
+        "subjects": ["Science"],
+        "paper": "Paper 2"
+      }
+    ],
+    "afternoon": []
+  },
+  {
+    "date": "2020-06-15",
+    "morning": [],
+    "afternoon": [
+      {
+        "name": "Further Mathematics",
+        "examBoard": "AQA",
+        "duration": "1h 45m",
+        "subjects": ["Further Maths"],
+        "paper": "Paper 1"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-16",
+    "morning": [
+      {
+        "name": "Hospitality & Catering (Paper test)",
+        "examBoard": "WJEC",
+        "duration": "1h 30m",
+        "subjects": ["Hospitality and Catering"]
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Health & Social",
+        "examBoard": "OCR",
+        "duration": "1h",
+        "subjects": ["Health and Social"]
+      }
+    ]
+  },
+  {
+    "date": "2020-06-17",
+    "morning": [],
+    "afternoon": []
+  },
+  {
+    "date": "2020-06-18",
+    "morning": [
+      {
+        "name": "Further Mathematics",
+        "examBoard": "AQA",
+        "duration": "1h 45m",
+        "subjects": ["Further Maths"],
+        "paper": "Paper 2"
+      }
+    ],
+    "afternoon": []
+  },
+  {
+    "date": "2020-06-24",
+    "type": "contingency"
   }
 ]

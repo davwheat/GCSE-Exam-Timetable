@@ -175,10 +175,10 @@
               type="checkbox"
               class="custom-control-input"
               id="hospCater"
-              data-subject="Hospitability and Catering"
+              data-subject="Hospitality and Catering"
             />
             <label class="custom-control-label" for="hospCater"
-              >Hospitability and Catering</label
+              >Hospitality and Catering</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -242,7 +242,7 @@
               type="checkbox"
               class="custom-control-input"
               id="compSci"
-              data-subject="Computer Science"
+              data-subject="Computer Sci"
             />
             <label class="custom-control-label" for="compSci"
               >Computer Science</label
@@ -306,6 +306,26 @@
               >Further Maths</label
             >
           </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="healthandsocial"
+              data-subject="Health and Social"
+            />
+            <label class="custom-control-label" for="healthandsocial"
+              >Health and Social</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="arabic"
+              data-subject="Arabic"
+            />
+            <label class="custom-control-label" for="arabic">Arabic</label>
+          </div>
         </form>
       </div>
     </section>
@@ -331,13 +351,20 @@
 
     <section id="timetable" class="new-layer pad">
       <div class="container">
-        <h2 class="display-4">Timetable</h2>
+        <h2 class="display-4 no-print">Timetable</h2>
+        <p class="text-center">
+          <strong>NB: </strong
+          ><em
+            >Where timing differs between foundation and higher, it is given in
+            the form FOUNDATION/HIGHER.</em
+          >
+        </p>
         <table class="table table-bordered" id="table">
           <thead>
             <tr class="new-layer">
               <th scope="col">Date</th>
-              <th scope="col">Morning</th>
-              <th scope="col">Afternoon</th>
+              <th colspan="2" scope="col">Morning</th>
+              <th colspan="2" scope="col">Afternoon</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -376,7 +403,7 @@
         // animate
         $("html, body").animate(
           {
-            scrollTop: $(hash).offset().top - 67
+            scrollTop: $(hash).offset().top /* - 67*/
           },
           300,
           function() {
@@ -391,7 +418,7 @@
         $("button.navbar-toggler").click();
       });
 
-      $("input[data-setting]").on("click", function(e) {
+      $("input[data-setting]").on("change", function(e) {
         const $t = $(this);
 
         const setting = $t.attr("data-setting");
@@ -405,130 +432,23 @@
         }
       });
 
-      const exams = [
-        {
-          date: "2020-02-25",
-          morning: [
-            {
-              name: "Hospitality & Catering Practical",
-              examBoard: "WJEC",
-              duration: "4h"
-            }
-          ],
-          afternoon: []
-        },
-        {
-          date: "2020-02-26",
-          morning: [
-            {
-              name: "Hospitality & Catering Practical",
-              examBoard: "WJEC",
-              duration: "4h"
-            }
-          ],
-          afternoon: []
-        },
-        {
-          date: "2020-04-21",
-          morning: [
-            {
-              name: "Art & Photography Exams",
-              examBoard: "AQA",
-              duration: "4h"
-            }
-          ],
-          afternoon: [
-            {
-              name: "Art & Photography Exams",
-              examBoard: "AQA",
-              duration: "1h"
-            }
-          ]
-        },
-        {
-          date: "2020-04-22",
-          morning: [
-            {
-              name: "Art & Photography Exams",
-              examBoard: "AQA",
-              duration: "4h"
-            }
-          ],
-          afternoon: [
-            {
-              name: "Art & Photography Exams",
-              examBoard: "AQA",
-              duration: "1h"
-            }
-          ]
-        },
-        {
-          date: "2020-04-23",
-          morning: [
-            {
-              name: "Art & Photography Exams",
-              examBoard: "AQA",
-              duration: "4h"
-            }
-          ],
-          afternoon: [
-            {
-              name: "Art & Photography Exams",
-              examBoard: "AQA",
-              duration: "1h"
-            }
-          ]
-        },
-        {
-          date: "2020-04-24",
-          morning: [
-            {
-              name: "Art & Photography Exams",
-              examBoard: "AQA",
-              duration: "4h"
-            }
-          ],
-          afternoon: [
-            {
-              name: "Art & Photography Exams",
-              examBoard: "AQA",
-              duration: "1h"
-            }
-          ]
+      function updateTimetable(e) {
+        const $t = $(this);
+
+        const subject = $t.attr("data-subject");
+        const checked = $t.is(":checked");
+
+        const allCells = $(`td[data-subjects*="${subject},"]`);
+
+        if (checked) {
+          allCells.addClass("highlighted");
+        } else {
+          allCells.removeClass("highlighted");
         }
-      ];
+      }
 
-      $(() => {
-        exams.forEach(exam => {
-          let html = `<tr>`;
-
-          html += `<td>${new Date(exam.date).toLocaleDateString("en-GB", {
-            weekday: "long",
-            year: "numeric",
-            month: "long",
-            day: "numeric"
-          })}</td>`;
-
-          if (exam.morning !== []) {
-            html += `<td>
-            ${exam.morning[0].name}<br />
-            ${exam.morning[0].examBoard}<br />
-            ${exam.morning[0].duration || ""}
-          </td>`;
-          }
-
-          if (exam.afternoon[0]) {
-            html += `<td>
-              ${exam.afternoon[0].name}<br />
-              ${exam.afternoon[0].examBoard}<br />
-              ${exam.afternoon[0].duration || ""}
-            </td>`;
-          } else html += `<td class="hatch"></td>`;
-
-          html += `</tr>`;
-          $("#table tbody").append(html);
-        });
-      });
+      $("input[data-subject]").on("change", updateTimetable);
     </script>
+    <script src="table-gen.js"></script>
   </body>
 </html>

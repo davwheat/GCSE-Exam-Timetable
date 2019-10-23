@@ -84,15 +84,58 @@
     color: #fff;
     background-color: rgba(255, 255, 255, 0.075);
   }
+
+  .table-dark-c td.highlighted {
+    background: rgb(255, 0, 157) !important;
+  }
+
+  .table-dark-c .hatch::after {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    opacity: 0.8;
+  }
+}
+
+@media print {
+  body > *:not(#timetable),
+  .no-print {
+    display: none;
+  }
+
+  td.highlighted {
+    background: #ff0 !important;
+    -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+    color-adjust: exact !important; /*Firefox*/
+  }
+  td.contingency {
+    background: #f00a;
+    color: #000;
+    -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+    color-adjust: exact !important; /*Firefox*/
+  }
 }
 
 .table td {
   text-align: center;
+  vertical-align: middle;
+}
+
+tr.date-gap td {
+  border-top: 4px solid #aab4bf;
+}
+
+.table tbody tr td:first-child {
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 30%;
+  max-width: min-content;
 }
 
 .hatch {
   background: url("img/cross.svg");
   position: relative;
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+  color-adjust: exact !important; /*Firefox*/
 }
 
 .hatch::after {
@@ -104,14 +147,10 @@
   right: 0;
   bottom: 0;
   background: url("img/no-exam.png") no-repeat center center;
-  background-size: 60%;
+  background-size: contain;
   opacity: 0.4;
-}
-
-.table-dark-c .hatch::after {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-  opacity: 0.8;
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+  color-adjust: exact !important; /*Firefox*/
 }
 
 .full-height {
@@ -124,4 +163,16 @@
 .full-height > * {
   margin-left: auto;
   margin-right: auto;
+}
+
+td.highlighted {
+  background: #ff0 !important;
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+  color-adjust: exact !important; /*Firefox*/
+}
+td.contingency {
+  background: #f00a;
+  color: #000;
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+  color-adjust: exact !important; /*Firefox*/
 }
